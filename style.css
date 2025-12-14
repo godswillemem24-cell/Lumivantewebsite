@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    background: #ffffff;
+    color: #111111;
+    line-height: 1.6;
+    padding: 40px;
+    font-weight: 400;
+}
+
+section {
+    backdrop-filter: blur(10px) saturate(180%);
+    -webkit-backdrop-filter: blur(10px) saturate(180%);
+    background-color: rgba(255,255,255,0.3);
+    border-radius: 20px;
+    margin-bottom: 40px;
+    padding: 30px;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.05);
+    transition: all 0.3s ease;
+}
+
+h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    color: #111111;
+    text-align: center;
+    text-shadow: 0 0 10px rgba(0,113,227,0.5);
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+p {
+    font-weight: 300;
+    font-size: 1rem;
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+ul li {
+    margin-bottom: 10px;
+    font-weight: 300;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+    margin-bottom: 20px;
+}
+
+/* Keep general responsive images */
+.responsive-img {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    display: block;
+    margin: 0 auto 20px auto;
+}
+
+/* Carousel styling */
+.carousel {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    border-radius: 16px;
+    margin-bottom: 30px;
+}
+
+.carousel-track {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    width: 100%;
+}
+
+.carousel-track img {
+    flex: 0 0 100%; /* full width per slide */
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    font-size: 0.8rem;
+    color: #555555;
+    margin-top: 50px;
+}
+
+/* Responsive Media Queries */
+@media (max-width: 1024px) {
+    h1 { font-size: 2.5rem; }
+    h2 { font-size: 1.8rem; }
+    body { padding: 30px; }
+    section { padding: 25px; }
+}
+
+@media (max-width: 768px) {
+    h1 { font-size: 2rem; }
+    h2 { font-size: 1.5rem; }
+    body { padding: 20px; }
+    section { padding: 20px; }
+}
+
+@media (max-width: 480px) {
+    h1 { font-size: 1.5rem; }
+    h2 { font-size: 1.2rem; }
+    body { padding: 15px; }
+    section { padding: 15px; }
+}
